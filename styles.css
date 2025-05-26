@@ -1,0 +1,36 @@
+body {
+    background-color: lightgray;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 139, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label:not(label:first-child) {
+    margin-top: 1rem;
+}
+
+form > button:not(button:first-child) {
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+
+    width: fit-content;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.centered {
+    display: flex;
+    align-self: center;
+
+    gap: 0.75rem;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheOdinProject | Project: Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="book-shelf">
+
+        </div>
+        <button id="new-book-btn">New Book</button>
+
+        <dialog id="book-input-modal">
+            <form id="book-input-form">
+                <label for="title-input">Title Name:</label>
+                <input type="text" id="title-input">
+
+                <label for="author-input">Author Name:</label>
+                <input type="text" id="author-input">
+
+                <label for="page-count-input">Page Count:</label>
+                <input type="number" min="0" id="page-count-input">
+
+                <div class="flex-row">
+                    <label for="read-before-input">Read before:</label>
+                    <input type="checkbox" id="read-before-input">
+                </div>
+
+                <div class="flex-row centered">
+                    <button type="submit" formmethod="dialog">Cancel</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </dialog>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
